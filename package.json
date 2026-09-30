@@ -1,10 +1,10 @@
 {
   "name": "lecture-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Telegram lecture bot and website",
+  "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bot.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "better-sqlite3": "^13.0.3",
     "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "telegraf": "^4.16.3"
   }
 }

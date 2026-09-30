@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ky">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lecture Archive</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo" id="logo">
+          <span class="logo-icon"> 📚 </span>
+
+          <span> Lecture Archive </span>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-link active" id="homeNav">Башкы бет</button>
+
+          <button class="nav-link" id="lecturesNav">Лекциялар</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Лекциялар</h1>
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Лекция же предмет издөө..."
+        />
+
+        <button id="searchButton">🔎 Издөө</button>
+      </div>
+
+      <p>Семестрди танда</p>
+
+      <div id="content" class="grid">Жүктөлүүдө...</div>
+    </main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-badge"> 🎓 2026–2027 окуу жылы </span>
+
+        <h1>Бардык лекцияларың бир жерде</h1>
+
+        <p>
+          Telegram бот аркылуу кошулган лекциялар автоматтык түрдө веб-сайтта
+          көрүнөт.
+        </p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <div class="stat-icon">📚</div>
+
+        <div>
+          <h2 id="lectureCount">0</h2>
+
+          <p>Лекция</p>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">📘</div>
+
+        <div>
+          <h2 id="subjectCount">0</h2>
+
+          <p>Предмет</p>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">🎓</div>
+
+        <div>
+          <h2 id="semesterCount">0</h2>
+
+          <p>Семестр</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-section">
+      <div class="section-header">
+        <div>
+          <h2>🕐 Акыркы лекциялар</h2>
+
+          <p>Жакында кошулган лекциялар</p>
+        </div>
+      </div>
+
+      <div id="latestLectures" class="latest-grid">Жүктөлүүдө...</div>
+    </section>
+
+    <div id="notification" class="notification"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
